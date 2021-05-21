@@ -9,7 +9,7 @@ Run the python file after changing the directory to point to the current Numer.a
 ## Usage
 
 python allornothing.py will produce two files.  One is optimistic where as one is feature neutralized.
-python symmetricnmf.py will also produce files.  One uses reducded data via NMF and one uses Symmetric NMF.
+python symmetricnmf.py will also produce files.  One uses reduced data via NMF and one uses Symmetric NMF.
 
 ## History
 
