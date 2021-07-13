@@ -8,8 +8,8 @@ Run the python file after changing the directory to point to the current Numer.a
 
 ## Usage
 
-python allornothing.py will produce two files.  One is optimistic where as one is feature neutralized.
-python symmetricnmf.py will also produce files.  One uses reduced data via NMF and one uses Symmetric NMF.
+python allornothing.py will produce two files.  Genetic Programming discovered the basic models. The output was then used for predictions; one is optimistic where as one is feature neutralized.
+python symmetric.py will also produce files.  One uses a GP Relu function and the other uses a Sigmoid Function to discover a symmetric representation of the data.  Predictions are then made using linear algebra.
 
 ## History
 
