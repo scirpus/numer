@@ -2,7 +2,6 @@
 # coding: utf-8
 import numpy as np
 import pandas as pd
-from scipy.special import expit
 from sklearn.preprocessing import PolynomialFeatures
 
 
@@ -43,11 +42,11 @@ def CreateSubmission(submissionFile, q, train, test):
 if __name__ == "__main__":
     train = pd.read_csv('numerai_training_data.csv')
     test = pd.read_csv('numerai_tournament_data.csv')
-    print('Relu Model')
-    w = np.genfromtxt('./Numer_relu_128.csv', delimiter=',')
-    CreateSubmission('superofficial.csv', np.maximum(0, w), train, test)
+    print('Kullback Leibler Model')
+    w = np.genfromtxt('./kullbackleibler.csv', delimiter=',')
+    CreateSubmission('superofficial.csv', w, train, test)
 
-    print('Sigmoidal Model')
-    w = np.genfromtxt('./Numer_sig_128.csv', delimiter=',')
-    CreateSubmission('superofficialII.csv', expit(w), train, test)
+    print('Frobenius Model')
+    w = np.genfromtxt('./frobenius.csv', delimiter=',')
+    CreateSubmission('superofficialII.csv', w, train, test)
 
