@@ -1,6 +1,6 @@
 # Project Home
 
-A simple Genetic Program to get in the top 100 for the main Numer.ai competition
+A simple Genetic Program to get in the top 100 for the main Numer.ai competition.
 
 ## Installation
 
